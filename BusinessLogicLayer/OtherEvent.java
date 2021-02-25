@@ -13,8 +13,6 @@ public class OtherEvent implements Event {
     String mainCourse;
     String Desert;
 
-
-
 	@Override
 	public void getEventDetails() {
 		

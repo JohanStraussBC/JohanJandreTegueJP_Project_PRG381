@@ -1,7 +1,7 @@
 package BusinessLogicLayer;
 import java.util.*;
 
-public class Birthday implements Event {
+public class BirthDay implements Event {
 
     String eventType = "Birth Day";
     String eventDateandTime;
@@ -13,8 +13,6 @@ public class Birthday implements Event {
     String starters;
     String mainCourse;
     String Desert;
-
-
 
 	@Override
 	public void getEventDetails() {
