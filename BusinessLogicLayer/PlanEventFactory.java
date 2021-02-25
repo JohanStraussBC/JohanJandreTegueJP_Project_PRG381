@@ -11,15 +11,15 @@ public class PlanEventFactory {
                 break;
         
             case 2://bifday
-                
+                event = new BirthDay();
                 break;
         
             case 3://funeral
-                
+                event = new Funeral();
                 break;
         
             case 4://other
-                
+                event = new OtherEvent();
                 break;
         
             default:
