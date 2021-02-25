@@ -18,5 +18,7 @@ public class Client {
 
         System.out.println("Enter cell number:");
         cellNumber = scn.nextLine();
+
+        scn.close();
     }
 }
