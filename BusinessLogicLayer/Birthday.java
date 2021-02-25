@@ -1,9 +1,9 @@
 package BusinessLogicLayer;
 import java.util.*;
 
-public class BirthDay implements Event {
-
-    String eventType = "Birth Day";
+public class BirthDay implements Event{
+    
+    String eventType = "BirthDay";
     String eventDateandTime;
     String eventAddress;
     String eventTheme;
@@ -15,7 +15,8 @@ public class BirthDay implements Event {
     String Desert;
 
 	@Override
-	public void getEventDetails() {
+	public void getEventDetails() 
+    {
 		
         Scanner scn = new Scanner(System.in);
         System.out.println("When(Date & Time)");
