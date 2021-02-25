@@ -1,25 +1,30 @@
 package BusinessLogicLayer;
 
 public class PlanEventFactory {
-    Events events;
+    Event event;
 
-    public Events PlanMenu(int choice){
+    public Event PlanMenu(int choice){
 
         switch (choice) {
-            case 1:
+            case 1://wedding
+                event = new Wedding();
+                break;
+        
+            case 2://bifday
                 
                 break;
         
-            case 2:
+            case 3://funeral
                 
                 break;
         
-            case 3:
+            case 4://other
                 
                 break;
         
             default:
                 break;
         }
+        return event;
     }
 }
