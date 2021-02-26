@@ -1,24 +1,48 @@
 package BusinessLogicLayer;
+
 import java.util.*;
+import DataAccessLayer.*;
 
 public class Client {
-    
-    void getClientDetails(){
 
-        String name;
-        String surname;
-        String cellNumber;
+    private String name;
+    private String surname;
+    private String cellNumber;
 
-        Scanner scn = new Scanner(System.in);
-        System.out.println("Enter name:");
-        name = scn.nextLine();
+    public Client(){
 
-        System.out.println("Enter surname:");
-        surname = scn.nextLine();
-
-        System.out.println("Enter cell number:");
-        cellNumber = scn.nextLine();
-
-        scn.close();
     }
+
+    public Client(String name, String surname, String cellNumber){
+        this.name = name;
+        this.surname = surname;
+        this.cellNumber = cellNumber;
+
+    }
+
+    public String getName(String nm) {
+        return name;
+    }
+
+    public String getCellNumber() {
+        return cellNumber;
+    }
+
+    public void setCellNumber(String cellNumber) {
+        this.cellNumber = cellNumber;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    
 }

@@ -33,6 +33,7 @@ public class BirthDay implements Event{
 
 
         System.out.println("==================================Menu:=============================");
+        
         System.out.println("What starters would you like?");
         starters = scn.nextLine();
 

@@ -7,8 +7,4 @@ public interface Event {
 
     void getEventDetails();
 
-
-
-
-
 }

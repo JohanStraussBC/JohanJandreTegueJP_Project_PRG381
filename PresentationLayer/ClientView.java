@@ -1,26 +1,25 @@
 package PresentationLayer;
+
+import java.io.IOException;
 import java.util.*;
 
-import BusinessLogicLayer.Client;
 import BusinessLogicLayer.LoginFactory;
 
 public class ClientView {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         LoginFactory factory = new LoginFactory(); 
         
-        System.out.println("Welcome to Rachael's Event planning");
+        System.out.println("====================Welcome to Rachael's Event planning===================== \n");
         Scanner scner = new Scanner(System.in);
 
         System.out.println("Dou you want to Sign Up?");
 
-        System.out.println("Press: \n 1. Sign Up \n 2. List of Events we offer." );
+        System.out.println("Press: \n 1. Sign Up \n 2. List of Events we offer. \n 3. Exit" );
 
         int choice = scner.nextInt();
 
         factory.GetEntry(choice);
-
-        
 
         scner.close();
 
