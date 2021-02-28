@@ -1,8 +1,5 @@
 package BusinessLogicLayer;
 
-import java.util.*;
-import DataAccessLayer.*;
-
 public class Client {
 
     private String name;

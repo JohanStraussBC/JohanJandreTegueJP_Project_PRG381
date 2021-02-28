@@ -1,5 +1,7 @@
 package DataAccessLayer;
+
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
@@ -17,10 +19,12 @@ public class DAClientDetails {
         String name = "";
         String surname = "";
         String cellNumber = "";
+        File file = new File("ClientDetails.txt");
+        String path = file.getAbsolutePath();
 
         Scanner scn = new Scanner(System.in);
 
-        FileWriter fileWriter = new FileWriter("C:\\Users\\Johan Strauss\\Documents\\Uni\\3rd Year\\PRG381\\Assignments & Project\\Project\\ClientDetails.txt",true);
+        FileWriter fileWriter = new FileWriter(path,true);
         BufferedWriter bwriter = new BufferedWriter(fileWriter);
 
         System.out.println("Enter name:");
